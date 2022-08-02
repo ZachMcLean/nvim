@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
     use 'folke/tokyonight.nvim'
     use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
     use 'nvim-lua/plenary.nvim' -- Useful lua functions used in lots of plugins
+    use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
     
     use "hrsh7th/nvim-cmp"  -- The completion plugin
     use "hrsh7th/cmp-buffer"  -- buffer completion 
@@ -66,6 +67,13 @@ return require("packer").startup(function(use)
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
+
+    -- Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = "TSUpdate",
+    }
+    use "p00f/nvim-ts-rainbow"
 
     -- Automatically setup your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

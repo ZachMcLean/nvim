@@ -1,6 +1,8 @@
 require("zach.cmp")
 require("zach.lsp")
 require("zach.telescope")
+require("zach.treesitter")
+require("zach.autopairs")
 require("zach.options")
 require("zach.packer")
 require("zach.keymap")
