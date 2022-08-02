@@ -1,3 +1,4 @@
+require("zach.cmp")
 require("zach.options")
 require("zach.packer")
 require("zach.keymap")
