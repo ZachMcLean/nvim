@@ -22,5 +22,9 @@ configs.setup {
       -- diable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
       extended_mode = true,
       max_file_lines = nil,
-  }
+  },
+  context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
+  },
 }
