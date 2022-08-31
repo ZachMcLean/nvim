@@ -57,6 +57,8 @@ return require("packer").startup(function(use)
     use 'akinsho/bufferline.nvim'
     use 'moll/vim-bbye'
 
+    use 'goolord/alpha-nvim' -- home page ui
+
     -- use 'SirVer/utilsnips'
     use 'mlaursen/vim-react-snippets'
 
