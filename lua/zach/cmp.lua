@@ -9,6 +9,7 @@ if not snip_status_ok then
 end
 require("luasnip/loaders/from_vscode").lazy_load()
 
+
 local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
@@ -128,3 +129,7 @@ cmp.setup {
     native_menu = false,
   },
 }
+
+-- require("luasnip.loaders.from_vscode").load({paths = { "javascript"}})
+luasnip.filetype_extend("javascript", { "javascriptreact" })
+luasnip.filetype_extend("javascript", { "html" })
