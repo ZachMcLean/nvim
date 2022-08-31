@@ -26,7 +26,7 @@ vim.g.maplocalleader = " "
 -- keymap("n", "<C-l>", "<C-w>l", opts)
 
   -- Opens netrw when space + e is clicked
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", "resize +2<CR>", opts)
@@ -37,6 +37,10 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
   -- Navigate buffers
 keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<A-h>", ":bprevious<CR>", opts)
+
+-- Navigate buffers
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
   -- Press jk fast to enter
@@ -63,3 +67,6 @@ keymap("x", "A-k", ":move '<-2<CR>gv-gv", opts)
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
